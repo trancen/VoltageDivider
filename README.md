@@ -1,5 +1,11 @@
 # ESP32-C3 Voltage Divider Calculator
 
+## About
+
+Originally, this application was developed to design a voltage divider for an ESP32 project, but it can be used for any voltage divider circuit using the resistors you have available.
+
+## Overview
+
 This Python application helps design voltage dividers for the ESP32-C3 microcontroller by calculating the best resistor pairs from a user-defined list to achieve a desired output voltage, ensuring compatibility with the ESP32-C3's ADC (max 3.3V). It also suggests resistors to purchase for exact voltage outputs and lists achievable voltages with available resistors.
 
 ## Features
