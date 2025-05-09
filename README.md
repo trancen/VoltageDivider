@@ -8,6 +8,25 @@ Originally, this application was developed to design a voltage divider for an ES
 
 This Python application helps design voltage dividers for the ESP32-C3 microcontroller by calculating the best resistor pairs from a user-defined list to achieve a desired output voltage, ensuring compatibility with the ESP32-C3's ADC (max 3.3V). It also suggests resistors to purchase for exact voltage outputs and lists achievable voltages with available resistors.
 
+## Circuit Diagram
+
+The voltage divider circuit consists of two resistors (R1 and R2) in series, with the output voltage (Vout) taken from their junction:
+
+```
+       Vin
+        |
+        |
+       [R1]
+        |
+        +---- Vout
+        |
+       [R2]
+        |
+        |
+       GND
+```
+
+
 ## Features
 
 - **Input Validation**: Accepts user input for input voltage (Vin) and desired output voltage (Vout), ensuring Vout ≤ Vin and Vout ≥ 0.
